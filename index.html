@@ -1,13 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://api.fontshare.com/v2/css?f[]=synonym@400&f[]=amulya@700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://api.fontshare.com/v2/css?f[]=poppins@300,400,500,600,700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+		></script>
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+		<title>Document</title>
+	</head>
+	<body>
+		<section class="container">
+			<div class="sidebar">
+				<div class="profile">
+					<div class="profile__img"></div>
+					<h3 class="profile__name">samantha</h3>
+					<p class="profile__email">samantha@email.com</p>
+				</div>
+				<ul class="menu">
+					<li class="menu__link">dashboard</li>
+					<li class="menu__link active">expenses</li>
+					<li class="menu__link">wallets</li>
+					<li class="menu__link">summary</li>
+					<li class="menu__link">accounts</li>
+					<li class="menu__link">settings</li>
+				</ul>
+			</div>
+			<div class="mainpage">
+				<div class="wrapper">
+					<section class="mainpage__first">
+						<!-- ----------------------------- page-title ------------------------------ -->
+						<div class="mainpage__header">
+							<div class="mainpage__header__left">
+								<h2 class="mainpage__title">expenses</h2>
+								<p class="mainpage__date">01 - 25 march, 2024</p>
+							</div>
+							<div class="mainpage__header__right">
+								<div class="image--container">
+									<div class="imgs"></div>
+									<div class="imgs"></div>
+									<div class="imgs"></div>
+								</div>
+								<div class="icon"><ion-icon name="add-outline"></ion-icon></div>
+							</div>
+						</div>
+						<!-- ---------------------------- stats-section ---------------------------- -->
+						<div class="stats"></div>
+						<!-- ----------------------------- body-items ------------------------------ -->
+						<div>
+							<!-- ----------------------------- todays-loe ------------------------------ -->
+							<section class="loe1">
+								<!-- ----------------------------- mini-title ------------------------------ -->
+								<div class="heading__div">
+									<h3 class="heading__txt">today</h3>
+									<div>
+										<ion-icon
+											class="more--icon"
+											name="ellipsis-horizontal-outline"
+										></ion-icon>
+									</div>
+								</div>
+								<!-- ---------------------------- mini-content ----------------------------- -->
+								<section class="bills--container">
+									<!-- ------------------------------- grocery ------------------------------- -->
+									<div class="bills">
+										<div class="bills__details">
+											<div class="bills__img">
+												<ion-icon name="cart-outline"></ion-icon>
+											</div>
+											<div class="items--names">
+												<h3 class="bills__name">grocery</h3>
+												<p class="bills__time">5:12 pm . wall mart</p>
+											</div>
+										</div>
+										<div class="bills--amount">
+											<h3 class="amount">-326.800</h3>
+										</div>
+									</div>
+									<!-- --------------------------- transportation ---------------------------- -->
+									<div class="bills">
+										<div class="bills__details">
+											<div class="bills__img t-img">
+												<ion-icon name="car-outline"></ion-icon>
+											</div>
+											<div class="items--names">
+												<h3 class="bills__name">transportation</h3>
+												<p class="bills__time">7:12 am . wall mart</p>
+											</div>
+										</div>
+										<div class="bills--amount">
+											<h3 class="amount">-15.000</h3>
+										</div>
+									</div>
+									<!-- ------------------------------- housing ------------------------------- -->
+									<div class="bills">
+										<div class="bills__details">
+											<div class="bills__img h-img">
+												<ion-icon name="home-outline"></ion-icon>
+											</div>
+											<div class="items--names">
+												<h3 class="bills__name">housing</h3>
+												<p class="bills__time">7:12 am . wall mart</p>
+											</div>
+										</div>
+										<div class="bills--amount">
+											<h3 class="amount">-185.750</h3>
+										</div>
+									</div>
+								</section>
+							</section>
+							<!-- --------------------------- yesterdays-loe ---------------------------- -->
+							<section class="loe1 loe2">
+								<!-- ----------------------------- mini-title ------------------------------ -->
+								<div class="heading__div">
+									<h3 class="heading__txt">monday, 23 march 2020</h3>
+									<div>
+										<ion-icon
+											class="more--icon"
+											name="ellipsis-horizontal-outline"
+										></ion-icon>
+									</div>
+								</div>
+								<!-- ---------------------------- mini-content ----------------------------- -->
+								<section class="bills--container">
+									<!-- ------------------------------- foodand drinks ------------------------------- -->
+									<div class="bills">
+										<div class="bills__details">
+											<div class="bills__img f-img">
+												<ion-icon name="fast-food-outline"></ion-icon>
+											</div>
+											<div class="items--names">
+												<h3 class="bills__name">food and drink</h3>
+												<p class="bills__time">5:12 pm . wall mart</p>
+											</div>
+										</div>
+										<div class="bills--amount">
+											<h3 class="amount">-256.000</h3>
+										</div>
+									</div>
+									<!-- --------------------------- entertainment ---------------------------- -->
+									<div class="bills">
+										<div class="bills__details">
+											<div class="bills__img e-img">
+												<ion-icon name="play-outline"></ion-icon>
+											</div>
+											<div class="items--names">
+												<h3 class="bills__name">entertainment</h3>
+												<p class="bills__time">7:12 am . wall mart</p>
+											</div>
+										</div>
+										<div class="bills--amount">
+											<h3 class="amount">-35.200</h3>
+										</div>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+					<section class="mainpage__second">
+						<h3 class="mps-title">where your money go?</h3>
+						<!-- ----------------------------- progres-bar ----------------------------- -->
+						<div>
+							<section class="prog-container">
+								<div class="ex-name">
+									<div>
+										<p class="txt1">food and drink</p>
+									</div>
+									<div>
+										<p class="txt2">$72,400</p>
+									</div>
+								</div>
+								<div class="progres-bar">
+									<div class="bar"></div>
+								</div>
+							</section>
+							<section class="prog-container">
+								<div class="ex-name">
+									<div>
+										<p class="txt1">shopping</p>
+									</div>
+									<div>
+										<p class="txt2">$376,200</p>
+									</div>
+								</div>
+								<div class="progres-bar">
+									<div class="bar"></div>
+								</div>
+							</section>
+							<section class="prog-container">
+								<div class="ex-name">
+									<div>
+										<p class="txt1">housing</p>
+									</div>
+									<div>
+										<p class="txt2">$28,500</p>
+									</div>
+								</div>
+								<div class="progres-bar">
+									<div class="bar"></div>
+								</div>
+							</section>
+							<section class="prog-container">
+								<div class="ex-name">
+									<div>
+										<p class="txt1">transportation</p>
+									</div>
+									<div>
+										<p class="txt2">$420,200</p>
+									</div>
+								</div>
+								<div class="progres-bar">
+									<div class="bar"></div>
+								</div>
+							</section>
+							<section class="prog-container">
+								<div class="ex-name">
+									<div>
+										<p class="txt1">vehicle</p>
+									</div>
+									<div>
+										<p class="txt2">$20,000</p>
+									</div>
+								</div>
+								<div class="progres-bar">
+									<div class="bar"></div>
+								</div>
+							</section>
+						</div>
+						<!-- ----------------------------- small-card ------------------------------ -->
+						<div class="card">
+							<div class="card__tc">
+								<h3 class="card__l-txt">save more money</h3>
+								<p class="card__s-txt">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
+									suscipit!
+								</p>
+								<div class="card__btn">view tips</div>
+							</div>
+							<div class="imgcon">
+								<img
+									class="card__img"
+									src="/imgs/safety-encryption-protection-privacy-data-access-yellow-padlock-with-keyhole-and-blue-key-3d-cartoon-illustration-on-orange-background-with-light-effects-vector-removebg-preview.png"
+									alt=""
+								/>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</section>
+	</body>
 </html>
